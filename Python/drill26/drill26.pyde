@@ -4,12 +4,25 @@ def setup():
 
 def draw():
     global s
+    for i in range(121):
+        if i%11==5 or i//11==5:
+            fill(0)
+        elif mouseX > i%11*s+30 and mouseX < i%11*s+70 \
+            and mouseY > i//11*s+30 and mouseY < i//11*s+70:
+            fill(255,0,0)
+        else:
+            fill(255)
+        ellipse(i%11*s+50,i//11*s+50,s,s)
+
+'''
     for x in range(11):
         for y in range(11):
             if x*s+50==250 or y*s+50==250:
                 fill(0)
-            elif mouseX > x*s+30 and mouseX < x*s+70 and mouseY > y*s+30 and mouseY < y*s+70:
+            elif mouseX > x*s+30 and mouseX < x*s+70 \
+                and mouseY > y*s+30 and mouseY < y*s+70:
                 fill(255,0,0)
             else:
                 fill(255)
             ellipse(x*s+50,y*s+50,s,s)
+'''
