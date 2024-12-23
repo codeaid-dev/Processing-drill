@@ -1,7 +1,9 @@
 x = [125,250,375,125,375]
 y = [125,250,125,375,375]
-dx = [1,1,1,1,1]
-dy = [2,2,2,2,2]
+#dx = [1,1,1,1,1]
+#dy = [2,2,2,2,2]
+dx = [random(1,3),random(1,3),random(1,3),random(1,3),random(1,3)]
+dy = [random(2,4),random(2,4),random(2,4),random(2,4),random(2,4)]
 status = [True,True,True,True,True]
 def setup():
     size(500,500)
