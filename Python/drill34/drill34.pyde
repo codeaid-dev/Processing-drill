@@ -1,9 +1,12 @@
 x = [125,375,125,375]
 y = [125,125,375,375]
-dx = [1,1,1,1]
-dy = [2,2,2,2]
+dx = []
+dy = []
 def setup():
     size(500,500)
+    for i in range(4):
+        dx.append(random(1,2))
+        dy.append(random(2,3))
 
 def draw():
     global x,y, dx,dy
