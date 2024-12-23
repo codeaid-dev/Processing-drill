@@ -19,7 +19,7 @@ def draw():
         y += dy
     ellipse(x, y, 50, 50)
 
-def mouseClicked():
+def mousePressed():
     global status
     dst = dist(mouseX, mouseY, x, y)
     if dst < 25:
