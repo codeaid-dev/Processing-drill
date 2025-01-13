@@ -5,7 +5,6 @@ def setup():
     size(500,500)
 
 def draw():
-    global dx,dy
     background(255)
     for i in range(len(x)):
         if x[i]-s/2 < 0 or x[i]+s/2 > width:
@@ -18,7 +17,6 @@ def draw():
         ellipse(x[i],y[i],s,s)
 
 def mousePressed():
-    global x,y,dx,dy
     x.append(mouseX)
     y.append(mouseY)
     dx.append(random(1,5))

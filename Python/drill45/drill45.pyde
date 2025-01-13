@@ -4,7 +4,7 @@ atari = []
 hit = []
 r,g,b = random(256),random(256),random(256)
 def setup():
-    global x,y,atari
+    global atari
     size(500,500)
     for i in range(100):
         x.append(i%10*s)

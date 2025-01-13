@@ -9,7 +9,6 @@ def setup():
         dy.append(random(2,3))
 
 def draw():
-    global x,y, dx,dy
     background(255)
     line(250,0,250,500)
     line(0,250,500,250)

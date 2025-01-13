@@ -11,7 +11,6 @@ def setup():
         status.append(True)
 
 def draw():
-    global x,y, dx,dy
     background(255)
     fill(0)
     for i in range(5):

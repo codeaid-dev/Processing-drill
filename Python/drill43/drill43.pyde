@@ -3,7 +3,7 @@ s = 50
 atari = 0
 hit = False
 def setup():
-    global x,y,atari
+    global atari
     size(500,500)
     for i in range(100):
         x.append(i%10*s)

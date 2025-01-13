@@ -8,7 +8,6 @@ def setup():
     size(500, 500)
 
 def draw():
-    global x,y,dx,dy
     background(255)
     noStroke()
     fill(0, 255, 0)
@@ -23,7 +22,7 @@ def draw():
         ellipse(x[i], y[i], s[i], s[i])
 
 def mousePressed():
-    global x, y, dx, dy, wx, wy
+    global wx, wy
     x.append(mouseX)
     y.append(mouseY)
     wx = mouseX
