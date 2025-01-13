@@ -33,7 +33,6 @@ def mousePressed():
     ready.append(False)
 
 def mouseDragged():
-    global s
     dst = dist(wx, wy, mouseX, mouseY)
     s[len(s)-1] = dst*2
 
