@@ -16,7 +16,6 @@ def setup():
         interval.append(int(random(120,240)))
 
 def draw():
-    global x,y, dx,dy, status
     background(255)
     fill(255,0,0)
     for i in range(5):

@@ -10,7 +10,7 @@ def setup():
         dy.append(random(1,4))
 
 def draw():
-    global x,y, dx,dy, status
+    global status
     background(255)
     fill(255,0,0)
     if frameCount % 120 == 0:

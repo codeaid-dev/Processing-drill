@@ -18,7 +18,6 @@ def setup():
         click.append(False)
 
 def draw():
-    global x,y, dx,dy, status
     background(255)
     fill(255,0,0)
     for i in range(5):
@@ -34,8 +33,7 @@ def draw():
         if status[i]:
             ellipse(x[i], y[i], 50, 50)
 
-def mouseClicked():
-    global click
+def mousePressed():
     for i in range(5):
         dst = dist(mouseX, mouseY, x[i], y[i])
         if dst < 25 and status[i]:
